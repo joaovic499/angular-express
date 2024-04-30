@@ -18,4 +18,8 @@ export class ItemService {
     return this.httpClient.get<Item[]>(`${this.baseURL}/${this.endpoint}`);
 
   }
+
+  cadastrar(item: Item):Observable<Item>{
+    return this.httpClient.post<Item>(`${this.baseURL}/${this.endpoint}`, item);
+  }
 }

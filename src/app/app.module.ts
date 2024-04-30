@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatListModule,
     HttpClientModule,
     MatTableModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
   ],
   providers: [
     provideClientHydration(),
