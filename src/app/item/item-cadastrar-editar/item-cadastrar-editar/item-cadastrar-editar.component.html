@@ -1,4 +1,4 @@
-<mat-toolbar> Cadastrar Item </mat-toolbar>
+<mat-toolbar>{{(item && item.id)?'Editar Item':'Cadastrar Item'}}</mat-toolbar>
 
 <div class="componente-container">
   <form class="form-padrao" *ngIf="formGroup" [formGroup]="formGroup" (ngSubmit)="formGroup.valid && salvar()"
